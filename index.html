@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .section{
+        display: flex;
+    }
+    .product-left{
+        padding: 15px;
+        width: 20%;
+    }
+    .product-top{
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: rgb(158, 155, 152);
+        padding: 1rem;
+        margin-bottom: 10px;
+    }
+    .product-top p{
+        margin-bottom: 5px;
+    }
+    .product-top input{
+        width: 150px;
+        height: 28px;
+        margin-bottom: 15px;
+        padding-left: 5px;
+    }
+    .product-top button{
+        display: block;
+        margin-bottom: 15px;
+        margin-left: 10px;
+        padding: 7px;
+        border-radius: 4px;
+        color: #fff;
+        background-color: #0bcb0b;
+        border-color: #0bcb0b;
+        cursor: pointer;
+        font-style: italic;
+    }
+
+    .product-bottom{
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: rgb(158, 155, 152);
+        padding: 1rem;
+    }
+    .product-bottom input{
+        width: 150px;
+        height: 28px;
+        margin-bottom: 15px;
+        padding-left: 5px;
+    }
+    .product-bottom p{
+        margin-bottom: 5px;
+    }
+    .product-right h2{
+        color: #fff;
+        padding-top: 20px;
+        margin-bottom: 15px;
+    }
+    .product-right .box{
+        border: 1px solid #fff;
+        border-radius: 5px;
+        max-width: 300px;
+        background-color: aliceblue;
+        margin-right: 5px;
+    }
+    .box img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .box span{
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .box p{
+        margin-bottom: 10px;
+        font-weight: bolder;
+        margin-left: 10px;
+    }
+    #price{
+        margin-left: 0px;
+    }
+    .boxes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+</style>
+<body style="background-color: rgb(43, 42, 42);">
+    
+    <div class="section">
+        <div class="product-left">
+            <div class="product-top">
+                <p>Product name</p>
+                <input type="text" name="" id="inp1" placeholder="Product name">
+                <p>Price</p>
+                <input type="text" name="" id="inp2" placeholder="Price">
+                <p>Image link</p>
+                <input type="text" name="" id="inp3" placeholder="Image link">
+                <button id="btn">Add new product</button>
+            </div>
+            <div class="product-bottom">
+                <p>Search</p>
+                <input type="text" name="" id="inpsearch" placeholder="Search">
+            </div>
+        </div>
+        <div class="product-right">
+            <h2>Products</h2>
+            <div class="boxes">
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
